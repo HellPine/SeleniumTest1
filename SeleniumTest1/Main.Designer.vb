@@ -29,6 +29,7 @@ Partial Class Main
         Me.RunningToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.SingleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MainToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.CharacterValidationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,7 +52,7 @@ Partial Class Main
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(92, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'FormsToolStripMenuItem
@@ -63,7 +64,7 @@ Partial Class Main
         '
         'ModdedTestsToolStripMenuItem
         '
-        Me.ModdedTestsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StructureCheckingToolStripMenuItem, Me.L1Step1ToolStripMenuItem})
+        Me.ModdedTestsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StructureCheckingToolStripMenuItem, Me.L1Step1ToolStripMenuItem, Me.CharacterValidationToolStripMenuItem})
         Me.ModdedTestsToolStripMenuItem.Name = "ModdedTestsToolStripMenuItem"
         Me.ModdedTestsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ModdedTestsToolStripMenuItem.Text = "Tests"
@@ -71,13 +72,13 @@ Partial Class Main
         'StructureCheckingToolStripMenuItem
         '
         Me.StructureCheckingToolStripMenuItem.Name = "StructureCheckingToolStripMenuItem"
-        Me.StructureCheckingToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
+        Me.StructureCheckingToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
         Me.StructureCheckingToolStripMenuItem.Text = "Structure Checking"
         '
         'L1Step1ToolStripMenuItem
         '
         Me.L1Step1ToolStripMenuItem.Name = "L1Step1ToolStripMenuItem"
-        Me.L1Step1ToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
+        Me.L1Step1ToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
         Me.L1Step1ToolStripMenuItem.Text = "L1 Registration"
         '
         'RunningToolStripMenuItem
@@ -90,14 +91,20 @@ Partial Class Main
         'SingleToolStripMenuItem
         '
         Me.SingleToolStripMenuItem.Name = "SingleToolStripMenuItem"
-        Me.SingleToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SingleToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
         Me.SingleToolStripMenuItem.Text = "Single"
         '
         'MainToolStripMenuItem
         '
         Me.MainToolStripMenuItem.Name = "MainToolStripMenuItem"
-        Me.MainToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MainToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
         Me.MainToolStripMenuItem.Text = "Batchs"
+        '
+        'CharacterValidationToolStripMenuItem
+        '
+        Me.CharacterValidationToolStripMenuItem.Name = "CharacterValidationToolStripMenuItem"
+        Me.CharacterValidationToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.CharacterValidationToolStripMenuItem.Text = "Character Validation"
         '
         'Main
         '
@@ -124,5 +131,6 @@ Partial Class Main
     Friend WithEvents RunningToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SingleToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MainToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CharacterValidationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

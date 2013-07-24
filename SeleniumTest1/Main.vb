@@ -54,4 +54,11 @@ Public Class Main
     End Sub
 
     
+    Private Sub CharacterValidationToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CharacterValidationToolStripMenuItem.Click
+
+        loading.Show()
+
+        CharValidation.Show()
+
+    End Sub
 End Class
