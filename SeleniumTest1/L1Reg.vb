@@ -46,7 +46,7 @@ Public Class L1Reg
             dbconnect()
 
             sqlstr.Connection = myconex
-            sqlstr.CommandText = "select link,fname,lname,email,day,month,year,next,eighteen,accept,login,password,fun,realbutton,repassword from l1test where testid='" & TextBox1.Text & "'"
+            sqlstr.CommandText = "select link,repassword,fun,realbutton,login,password,accept,eighteen,next,year,month,day,email,lname,fname from l1test where testid='" & TextBox1.Text & "'"
             myAdapter.SelectCommand = sqlstr
             myAdapter.Fill(bdt)
 
@@ -65,6 +65,7 @@ Public Class L1Reg
                     If TypeOf cntrl Is TextBox Then
 
                         cntrl.Text = bdt.Rows(0).Item(n)
+                        cntrl.BackColor = Color.AliceBlue
                         cntrl.BackColor = Color.White
                         n = n + 1
 
@@ -235,7 +236,7 @@ Public Class L1Reg
 
                     If TypeOf cntrl Is TextBox Then
 
-                        cntrl.Text = cntrl.Text.Replace("'", "¬")
+                        cntrl.Text = cntrl.Text.Replace(ControlChars.Quote, "¬")
                         'xpath = TextBox4.Text.Replace("'", "¬")
 
                     End If
@@ -360,7 +361,7 @@ Public Class L1Reg
 
         If (TextBox2.Text <> "") Then
 
-            TextBox2.Text = TextBox2.Text.Replace("'", "¬")
+            TextBox2.Text = TextBox2.Text.Replace(ControlChars.Quote, "¬")
             Dim tdt As New DataTable
 
             dbconnect()
@@ -397,7 +398,7 @@ Public Class L1Reg
             Else
 
                 MsgBox("This xpathc is already included for this TestId", MsgBoxStyle.Critical)
-                TextBox2.Text = TextBox2.Text.Replace("¬", "'")
+                TextBox2.Text = TextBox2.Text.Replace("¬", ControlChars.Quote)
 
             End If
 

@@ -25,6 +25,8 @@ Partial Class L1Reg
         Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.ComboBox1 = New System.Windows.Forms.ComboBox
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
+        Me.Label16 = New System.Windows.Forms.Label
+        Me.TextBox16 = New System.Windows.Forms.TextBox
         Me.Label14 = New System.Windows.Forms.Label
         Me.TextBox14 = New System.Windows.Forms.TextBox
         Me.Label15 = New System.Windows.Forms.Label
@@ -56,11 +58,9 @@ Partial Class L1Reg
         Me.Label2 = New System.Windows.Forms.Label
         Me.TextBox2 = New System.Windows.Forms.TextBox
         Me.GroupBox3 = New System.Windows.Forms.GroupBox
-        Me.Button4 = New System.Windows.Forms.Button
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView
         Me.Button5 = New System.Windows.Forms.Button
-        Me.Label16 = New System.Windows.Forms.Label
-        Me.TextBox16 = New System.Windows.Forms.TextBox
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView
+        Me.Button4 = New System.Windows.Forms.Button
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -156,6 +156,24 @@ Partial Class L1Reg
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "TEST DATA"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.ForeColor = System.Drawing.Color.Black
+        Me.Label16.Location = New System.Drawing.Point(7, 356)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(122, 13)
+        Me.Label16.TabIndex = 32
+        Me.Label16.Text = "Repeat Password Xpath"
+        Me.Label16.TextAlign = System.Drawing.ContentAlignment.TopRight
+        '
+        'TextBox16
+        '
+        Me.TextBox16.Location = New System.Drawing.Point(134, 349)
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.Size = New System.Drawing.Size(254, 20)
+        Me.TextBox16.TabIndex = 31
         '
         'Label14
         '
@@ -404,7 +422,7 @@ Partial Class L1Reg
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(135, 30)
+        Me.TextBox3.Location = New System.Drawing.Point(135, 31)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(254, 20)
         Me.TextBox3.TabIndex = 3
@@ -442,15 +460,14 @@ Partial Class L1Reg
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Link Xpath"
         '
-        'Button4
+        'Button5
         '
-        Me.Button4.Location = New System.Drawing.Point(349, 27)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(52, 23)
-        Me.Button4.TabIndex = 1
-        Me.Button4.Text = "ADD"
-        Me.Button4.UseVisualStyleBackColor = True
-        Me.Button4.Visible = False
+        Me.Button5.Location = New System.Drawing.Point(17, 486)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(125, 23)
+        Me.Button5.TabIndex = 18
+        Me.Button5.Text = "Delete Selected"
+        Me.Button5.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -462,32 +479,15 @@ Partial Class L1Reg
         Me.DataGridView1.Size = New System.Drawing.Size(383, 392)
         Me.DataGridView1.TabIndex = 3
         '
-        'Button5
+        'Button4
         '
-        Me.Button5.Location = New System.Drawing.Point(17, 486)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(125, 23)
-        Me.Button5.TabIndex = 18
-        Me.Button5.Text = "Delete Selected"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.ForeColor = System.Drawing.Color.Black
-        Me.Label16.Location = New System.Drawing.Point(7, 356)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(122, 13)
-        Me.Label16.TabIndex = 32
-        Me.Label16.Text = "Repeat Password Xpath"
-        Me.Label16.TextAlign = System.Drawing.ContentAlignment.TopRight
-        '
-        'TextBox16
-        '
-        Me.TextBox16.Location = New System.Drawing.Point(134, 349)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(254, 20)
-        Me.TextBox16.TabIndex = 31
+        Me.Button4.Location = New System.Drawing.Point(349, 27)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(52, 23)
+        Me.Button4.TabIndex = 1
+        Me.Button4.Text = "ADD"
+        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.Visible = False
         '
         'L1Reg
         '
