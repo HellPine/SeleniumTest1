@@ -25,9 +25,8 @@ Public Class Main
 
     End Sub
 
-    Private Sub StructureCheckingToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles StructureCheckingToolStripMenuItem.Click
-        loading.Show()
-        StCheck.Show()
+    Private Sub StructureCheckingToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        
 
     End Sub
 
@@ -46,19 +45,32 @@ Public Class Main
 
     End Sub
 
-    Private Sub L1Step1ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles L1Step1ToolStripMenuItem.Click
+    Private Sub L1Step1ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
+        
+    End Sub
+
+    
+    Private Sub CharacterValidationToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+       
+
+    End Sub
+
+    Private Sub StructureCheckingToolStripMenuItem_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles StructureCheckingToolStripMenuItem.Click
+        loading.Show()
+        StCheck.Show()
+    End Sub
+
+    Private Sub L1Step1ToolStripMenuItem_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles L1Step1ToolStripMenuItem.Click
         loading.Show()
         L1Reg.Show()
 
     End Sub
 
-    
-    Private Sub CharacterValidationToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CharacterValidationToolStripMenuItem.Click
-
+    Private Sub CharacterValidationToolStripMenuItem_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CharacterValidationToolStripMenuItem.Click
         loading.Show()
 
         CharValidation.Show()
-
     End Sub
 End Class

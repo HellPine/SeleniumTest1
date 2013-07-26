@@ -155,7 +155,7 @@ Partial Class L1Reg
         Me.GroupBox2.Size = New System.Drawing.Size(407, 540)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "TEST DATA"
+        Me.GroupBox2.Text = "TEST CssSelectors"
         '
         'Label16
         '
@@ -163,9 +163,9 @@ Partial Class L1Reg
         Me.Label16.ForeColor = System.Drawing.Color.Black
         Me.Label16.Location = New System.Drawing.Point(7, 356)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(122, 13)
+        Me.Label16.Size = New System.Drawing.Size(91, 13)
         Me.Label16.TabIndex = 32
-        Me.Label16.Text = "Repeat Password Xpath"
+        Me.Label16.Text = "Repeat Password"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'TextBox16
@@ -181,9 +181,9 @@ Partial Class L1Reg
         Me.Label14.ForeColor = System.Drawing.Color.Black
         Me.Label14.Location = New System.Drawing.Point(49, 456)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(79, 13)
+        Me.Label14.Size = New System.Drawing.Size(51, 13)
         Me.Label14.TabIndex = 30
-        Me.Label14.Text = "Play Fun Xpath"
+        Me.Label14.Text = "Play Fun "
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'TextBox14
@@ -199,9 +199,9 @@ Partial Class L1Reg
         Me.Label15.ForeColor = System.Drawing.Color.Black
         Me.Label15.Location = New System.Drawing.Point(45, 489)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(83, 13)
+        Me.Label15.Size = New System.Drawing.Size(55, 13)
         Me.Label15.TabIndex = 28
-        Me.Label15.Text = "Play Real Xpath"
+        Me.Label15.Text = "Play Real "
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'TextBox15
@@ -217,9 +217,9 @@ Partial Class L1Reg
         Me.Label12.ForeColor = System.Drawing.Color.Black
         Me.Label12.Location = New System.Drawing.Point(34, 292)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(95, 13)
+        Me.Label12.Size = New System.Drawing.Size(64, 13)
         Me.Label12.TabIndex = 26
-        Me.Label12.Text = "Login Name Xpath"
+        Me.Label12.Text = "Login Name"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'TextBox12
@@ -235,9 +235,9 @@ Partial Class L1Reg
         Me.Label13.ForeColor = System.Drawing.Color.Black
         Me.Label13.Location = New System.Drawing.Point(45, 327)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(84, 13)
+        Me.Label13.Size = New System.Drawing.Size(53, 13)
         Me.Label13.TabIndex = 24
-        Me.Label13.Text = "Password Xpath"
+        Me.Label13.Text = "Password"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'TextBox13
@@ -253,9 +253,9 @@ Partial Class L1Reg
         Me.Label11.ForeColor = System.Drawing.Color.Black
         Me.Label11.Location = New System.Drawing.Point(6, 426)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(122, 13)
+        Me.Label11.Size = New System.Drawing.Size(91, 13)
         Me.Label11.TabIndex = 22
-        Me.Label11.Text = "Accept checkbox Xpath"
+        Me.Label11.Text = "Accept checkbox"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'TextBox11
@@ -271,9 +271,9 @@ Partial Class L1Reg
         Me.Label10.ForeColor = System.Drawing.Color.Black
         Me.Label10.Location = New System.Drawing.Point(7, 391)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(123, 13)
+        Me.Label10.Size = New System.Drawing.Size(92, 13)
         Me.Label10.TabIndex = 20
-        Me.Label10.Text = "18 year checkbox Xpath"
+        Me.Label10.Text = "18 year checkbox"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'TextBox10
@@ -307,9 +307,9 @@ Partial Class L1Reg
         Me.Label9.ForeColor = System.Drawing.Color.Black
         Me.Label9.Location = New System.Drawing.Point(28, 256)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(101, 13)
+        Me.Label9.Size = New System.Drawing.Size(70, 13)
         Me.Label9.TabIndex = 16
-        Me.Label9.Text = "NEXT Button Xpath"
+        Me.Label9.Text = "NEXT Button"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'TextBox9
@@ -325,9 +325,9 @@ Partial Class L1Reg
         Me.Label8.ForeColor = System.Drawing.Color.Black
         Me.Label8.Location = New System.Drawing.Point(69, 220)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(60, 13)
+        Me.Label8.Size = New System.Drawing.Size(32, 13)
         Me.Label8.TabIndex = 14
-        Me.Label8.Text = "Year Xpath"
+        Me.Label8.Text = "Year "
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'TextBox8
@@ -343,9 +343,9 @@ Partial Class L1Reg
         Me.Label7.ForeColor = System.Drawing.Color.Black
         Me.Label7.Location = New System.Drawing.Point(61, 180)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(68, 13)
+        Me.Label7.Size = New System.Drawing.Size(40, 13)
         Me.Label7.TabIndex = 12
-        Me.Label7.Text = "Month Xpath"
+        Me.Label7.Text = "Month "
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'TextBox7
@@ -361,9 +361,9 @@ Partial Class L1Reg
         Me.Label6.ForeColor = System.Drawing.Color.Black
         Me.Label6.Location = New System.Drawing.Point(72, 148)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(57, 13)
+        Me.Label6.Size = New System.Drawing.Size(29, 13)
         Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Day Xpath"
+        Me.Label6.Text = "Day "
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'TextBox6
@@ -379,9 +379,9 @@ Partial Class L1Reg
         Me.Label5.ForeColor = System.Drawing.Color.Black
         Me.Label5.Location = New System.Drawing.Point(66, 112)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(63, 13)
+        Me.Label5.Size = New System.Drawing.Size(35, 13)
         Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Email Xpath"
+        Me.Label5.Text = "Email "
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'TextBox5
@@ -397,9 +397,9 @@ Partial Class L1Reg
         Me.Label4.ForeColor = System.Drawing.Color.Black
         Me.Label4.Location = New System.Drawing.Point(43, 75)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(86, 13)
+        Me.Label4.Size = New System.Drawing.Size(58, 13)
         Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Last NameXpath"
+        Me.Label4.Text = "Last Name"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'TextBox4
@@ -415,9 +415,9 @@ Partial Class L1Reg
         Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Location = New System.Drawing.Point(41, 37)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(88, 13)
+        Me.Label3.Size = New System.Drawing.Size(57, 13)
         Me.Label3.TabIndex = 4
-        Me.Label3.Text = "First Name Xpath"
+        Me.Label3.Text = "First Name"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'TextBox3
@@ -433,9 +433,9 @@ Partial Class L1Reg
         Me.Label2.ForeColor = System.Drawing.Color.Black
         Me.Label2.Location = New System.Drawing.Point(6, 37)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(100, 13)
+        Me.Label2.Size = New System.Drawing.Size(72, 13)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Register Link Xpath"
+        Me.Label2.Text = "Register Link "
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
         'TextBox2
@@ -458,7 +458,7 @@ Partial Class L1Reg
         Me.GroupBox3.Size = New System.Drawing.Size(407, 540)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Link Xpath"
+        Me.GroupBox3.Text = "Links CssSelectors"
         '
         'Button5
         '
