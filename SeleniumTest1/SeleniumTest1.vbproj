@@ -78,6 +78,18 @@
     <Compile Include="CharValidation.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="l2paymentscheck.Designer.vb">
+      <DependentUpon>l2paymentscheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="l2paymentscheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ibnl2common.Designer.vb">
+      <DependentUpon>ibnl2common.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ibnl2common.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="loading.Designer.vb">
       <DependentUpon>loading.vb</DependentUpon>
     </Compile>
@@ -136,6 +148,14 @@
     <EmbeddedResource Include="CharValidation.resx">
       <SubType>Designer</SubType>
       <DependentUpon>CharValidation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="l2paymentscheck.resx">
+      <DependentUpon>l2paymentscheck.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ibnl2common.resx">
+      <DependentUpon>ibnl2common.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="loading.resx">
       <SubType>Designer</SubType>

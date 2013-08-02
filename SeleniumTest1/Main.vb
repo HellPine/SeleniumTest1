@@ -73,4 +73,20 @@ Public Class Main
 
         CharValidation.Show()
     End Sub
+
+    Private Sub L2RegistrationToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles L2RegistrationToolStripMenuItem.Click
+
+        loading.Show()
+
+        ibnl2common.Show()
+
+    End Sub
+
+    Private Sub PaymentMethodsCheckingToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PaymentMethodsCheckingToolStripMenuItem.Click
+
+        loading.Show()
+
+        l2paymentscheck.Show()
+
+    End Sub
 End Class
