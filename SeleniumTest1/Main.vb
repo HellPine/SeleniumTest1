@@ -89,4 +89,12 @@ Public Class Main
         l2paymentscheck.Show()
 
     End Sub
+
+    Private Sub PaymentsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PaymentsToolStripMenuItem.Click
+
+        loading.Show()
+
+        payments.Show()
+
+    End Sub
 End Class

@@ -14,10 +14,10 @@ Module Module1
 
     Function dbconnect()
 
-        connStr = "Server=db4free.net;" & _
-                "Database=firsttry;" & _
-                "Uid=hellpine;" & _
-                "Pwd=111111;" & _
+        connStr = "Server=192.168.100.214;" & _
+                "Database=automation_dev;" & _
+                "Uid=daniel;" & _
+                "Pwd=daniel;" & _
                 "Connect Timeout=30;"
 
         myconex = New MySqlConnection(connStr)

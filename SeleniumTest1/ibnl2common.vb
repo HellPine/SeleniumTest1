@@ -30,7 +30,7 @@ Public Class ibnl2common
 
         End If
 
-        ComboBox2.Items.Add("Neteller")
+        'ComboBox2.Items.Add("Neteller")
 
         myconex.Close()
         loading.Hide()

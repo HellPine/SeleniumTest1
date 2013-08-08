@@ -1,34 +1,26 @@
-Public Class l2paymentscheck
+Public Class payments
 
-    Private Sub l2paymentscheck_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    Private Sub payments_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Dim bdt, tdt, udt As New DataTable
 
         dbconnect()
 
         sqlstr.Connection = myconex
-        sqlstr.CommandText = "select distinct testid from tests where testkind='ibnl2chk'"
+        sqlstr.CommandText = "select distinct paymentid from payments"
         myAdapter.SelectCommand = sqlstr
         myAdapter.Fill(bdt)
 
         If (bdt.Rows.Count) >= 1 Then
 
             ComboBox1.DataSource = bdt
-            ComboBox1.DisplayMember = "testid"
+            ComboBox1.DisplayMember = "paymentid"
 
         End If
 
-        sqlstr.Connection = myconex
-        sqlstr.CommandText = "select distinct testid from tests where testkind='ibnl2str'"
-        myAdapter.SelectCommand = sqlstr
-        myAdapter.Fill(tdt)
-
-        If (tdt.Rows.Count) >= 1 Then
-
-            ComboBox2.DataSource = tdt
-            ComboBox2.DisplayMember = "testid"
-
-        End If
+        ComboBox2.Items.Add("text")
+        ComboBox2.Items.Add("button")
+        ComboBox2.Items.Add("scroldown")
 
 
 
@@ -47,7 +39,7 @@ Public Class l2paymentscheck
             dbconnect()
 
             sqlstr.Connection = myconex
-            sqlstr.CommandText = "select icon,button,texttocheck from ibnl2paymentcheck where testid='" & TextBox1.Text & "'"
+            sqlstr.CommandText = "select fieldname,fieldcss,fieldtype,fieldvalue from payments where paymentid='" & TextBox1.Text & "'"
             myAdapter.SelectCommand = sqlstr
             myAdapter.Fill(bdt)
 
@@ -106,7 +98,7 @@ Public Class l2paymentscheck
 
         Else
 
-            MsgBox("TEST ID could not be in blank", MsgBoxStyle.Critical)
+            MsgBox("Payment ID could not be in blank", MsgBoxStyle.Critical)
 
         End If
 
@@ -198,11 +190,7 @@ Public Class l2paymentscheck
             Next
 
             sqlstr.Connection = myconex
-            sqlstr.CommandText = "insert into tests(testid,testkind) values('" & TextBox1.Text & "','ibnl2chk')"
-            sqlstr.ExecuteNonQuery()
-
-            sqlstr.Connection = myconex
-            sqlstr.CommandText = "insert into ibnl2paymentcheck(testid,testtoget,icon,button,texttocheck) values('" & TextBox1.Text & "','" & ComboBox2.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "')"
+            sqlstr.CommandText = "insert into payments(paymentid,fieldtype,fieldname,fieldcss,fieldvalue) values('" & TextBox1.Text & "','" & ComboBox2.Text & "','" & TextBox2.Text & "','" & TextBox3.Text & "','" & TextBox4.Text & "')"
             sqlstr.ExecuteNonQuery()
 
 
@@ -226,14 +214,14 @@ Public Class l2paymentscheck
 
 
             sqlstr.Connection = myconex
-            sqlstr.CommandText = "select distinct testid from tests where testkind='ibnl2chk'"
+            sqlstr.CommandText = "select distinct paymentid from payments"
             myAdapter.SelectCommand = sqlstr
             myAdapter.Fill(tdt)
 
             If (tdt.Rows.Count) >= 1 Then
 
                 ComboBox1.DataSource = tdt
-                ComboBox1.DisplayMember = "testid"
+                ComboBox1.DisplayMember = "paymentid"
 
             End If
 
@@ -281,7 +269,7 @@ Public Class l2paymentscheck
         Dim bid, tid As String
         Dim dt As New DataTable
         bid = TextBox1.Text
-        tid = DataGridView1.CurrentRow.Cells(0).Value.ToString
+        tid = DataGridView1.CurrentRow.Cells(1).Value.ToString
         If bid <> "" Then
 
             Try
@@ -289,7 +277,7 @@ Public Class l2paymentscheck
                 dbconnect()
                 sqlstr.Connection = myconex
                 'MsgBox(bid & "       " & tid)
-                sqlstr.CommandText = "delete from ibnl2paymentcheck where testid='" & bid & "' and icon='" & tid & "'"
+                sqlstr.CommandText = "delete from payments where paymentid='" & bid & "' and fieldcss='" & tid & "'"
                 sqlstr.ExecuteNonQuery()
 
                 Dim baid As String
@@ -307,5 +295,9 @@ Public Class l2paymentscheck
             End Try
 
         End If
+    End Sub
+
+    Private Sub TextBox4_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox4.TextChanged
+        TextBox2.BackColor = Color.White
     End Sub
 End Class

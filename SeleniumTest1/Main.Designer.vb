@@ -28,11 +28,12 @@ Partial Class Main
         Me.StructureCheckingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.L1Step1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.CharacterValidationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.L2RegistrationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.PaymentMethodsCheckingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.RunningToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.SingleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MainToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.L2RegistrationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.PaymentMethodsCheckingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.PaymentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -60,7 +61,7 @@ Partial Class Main
         '
         'FormsToolStripMenuItem
         '
-        Me.FormsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ModdedTestsToolStripMenuItem})
+        Me.FormsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ModdedTestsToolStripMenuItem, Me.PaymentsToolStripMenuItem})
         Me.FormsToolStripMenuItem.Name = "FormsToolStripMenuItem"
         Me.FormsToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
         Me.FormsToolStripMenuItem.Text = "Forms"
@@ -82,20 +83,32 @@ Partial Class Main
         'StructureCheckingToolStripMenuItem
         '
         Me.StructureCheckingToolStripMenuItem.Name = "StructureCheckingToolStripMenuItem"
-        Me.StructureCheckingToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.StructureCheckingToolStripMenuItem.Size = New System.Drawing.Size(237, 22)
         Me.StructureCheckingToolStripMenuItem.Text = "Structure Checking"
         '
         'L1Step1ToolStripMenuItem
         '
         Me.L1Step1ToolStripMenuItem.Name = "L1Step1ToolStripMenuItem"
-        Me.L1Step1ToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.L1Step1ToolStripMenuItem.Size = New System.Drawing.Size(237, 22)
         Me.L1Step1ToolStripMenuItem.Text = "L1 Registration"
         '
         'CharacterValidationToolStripMenuItem
         '
         Me.CharacterValidationToolStripMenuItem.Name = "CharacterValidationToolStripMenuItem"
-        Me.CharacterValidationToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.CharacterValidationToolStripMenuItem.Size = New System.Drawing.Size(237, 22)
         Me.CharacterValidationToolStripMenuItem.Text = "Character Validation"
+        '
+        'L2RegistrationToolStripMenuItem
+        '
+        Me.L2RegistrationToolStripMenuItem.Name = "L2RegistrationToolStripMenuItem"
+        Me.L2RegistrationToolStripMenuItem.Size = New System.Drawing.Size(237, 22)
+        Me.L2RegistrationToolStripMenuItem.Text = "L2 Registration"
+        '
+        'PaymentMethodsCheckingToolStripMenuItem
+        '
+        Me.PaymentMethodsCheckingToolStripMenuItem.Name = "PaymentMethodsCheckingToolStripMenuItem"
+        Me.PaymentMethodsCheckingToolStripMenuItem.Size = New System.Drawing.Size(237, 22)
+        Me.PaymentMethodsCheckingToolStripMenuItem.Text = "L2 Payment methods checking"
         '
         'RunningToolStripMenuItem
         '
@@ -107,26 +120,20 @@ Partial Class Main
         'SingleToolStripMenuItem
         '
         Me.SingleToolStripMenuItem.Name = "SingleToolStripMenuItem"
-        Me.SingleToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SingleToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
         Me.SingleToolStripMenuItem.Text = "Single"
         '
         'MainToolStripMenuItem
         '
         Me.MainToolStripMenuItem.Name = "MainToolStripMenuItem"
-        Me.MainToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MainToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
         Me.MainToolStripMenuItem.Text = "Batchs"
         '
-        'L2RegistrationToolStripMenuItem
+        'PaymentsToolStripMenuItem
         '
-        Me.L2RegistrationToolStripMenuItem.Name = "L2RegistrationToolStripMenuItem"
-        Me.L2RegistrationToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
-        Me.L2RegistrationToolStripMenuItem.Text = "L2 Registration"
-        '
-        'PaymentMethodsCheckingToolStripMenuItem
-        '
-        Me.PaymentMethodsCheckingToolStripMenuItem.Name = "PaymentMethodsCheckingToolStripMenuItem"
-        Me.PaymentMethodsCheckingToolStripMenuItem.Size = New System.Drawing.Size(237, 22)
-        Me.PaymentMethodsCheckingToolStripMenuItem.Text = "L2 Payment methods checking"
+        Me.PaymentsToolStripMenuItem.Name = "PaymentsToolStripMenuItem"
+        Me.PaymentsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PaymentsToolStripMenuItem.Text = "Payments"
         '
         'Main
         '
@@ -157,5 +164,6 @@ Partial Class Main
     Friend WithEvents CharacterValidationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents L2RegistrationToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PaymentMethodsCheckingToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PaymentsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
